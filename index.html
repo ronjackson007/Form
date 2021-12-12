@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            background-image: url("image6.jpg");
+            background-size: 100%;
+            /* background-repeat: no-repeat; */
+            color: rgb(255, 255, 255);
+        }
+
+        table {
+            background-color: none;
+            margin-top: 50px;
+            margin-bottom: 90px;
+            padding: 10px;
+            border: 3px white solid;
+            border-radius: 7px;
+
+
+        }
+
+        button {
+            border: none;
+            border-radius: 20px;
+            height: 40px;
+            width: 110px;
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(255, 249, 249);
+        }
+
+        button:hover {
+            background-color: #000000;
+            transition: 0.4s;
+            color: white;
+        }
+
+        .inputa {
+            border: none;
+            border-radius: 5px;
+            height: 25px;
+            margin-left: -2px;
+            background-color: none;
+
+        }
+
+        .Address {
+            border: none;
+            border-radius: 5px;
+            margin-left: -2px;
+            resize: none;
+
+
+        }
+
+        .tdo {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+
+        }
+
+        .tdv {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+            margin-left: -2px;
+        }
+
+        .tdoe {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+        }
+
+        .tdve {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            margin-left: -2px;
+
+        }
+
+        tr {
+            margin-top: 10px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+        }
+        th {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table cellpadding="7" cellspacing="0" align="center">
+            <tr>
+                <th align="left">Step 1: Your Detail</th>
+                <td class="tdv"></td>
+            </tr>
+
+            <tr>
+                <td class="tdo">Name</td>
+                <td class="tdv">
+                    <input class="inputa" type="text" name="name" placeholder="Your name" />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tdo">Email</td>
+                <td class="tdv">
+                    <input class="inputa" type="email" email="Email" placeholder="Your Email" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdo">Phone</td>
+                <td class="tdv">
+                    <input class="inputa" type="text" name="phone_number" placeholder="Your phone number" />
+                </td>
+            </tr>
+
+            <tr>
+                <th align="left">Step 2: Delivery Address</th>
+                <td class="tdv"></td>
+
+            </tr>
+
+            <tr>
+                <td class="tdo">Address</td>
+                <td class="tdv">
+                    <input placeholder="Your Address" style="width: 170px; height: 100px;" class="Address">
+                    <!-- </input> -->
+
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdo">Pincode</td>
+                <td class="tdv">
+                    <input placeholder="Your pincode" class="inputa" type="text" name="Pin" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdo">Country</td>
+                <td class="tdv">
+                    <input placeholder="Your country name" class="inputa" type="text" ame="country" />
+                </td>
+            </tr>
+
+            <tr>
+                <th align="left">Step 3: Card Detail</th>
+                <td class="tdv"></td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="tdoe">Card Type</td>
+            </tr>
+            <tr>
+                <td class="tdve" colspan="3">
+                    <input type="radio" name="card_type" />VISA
+                    <input style="margin-left: 30px;" type="radio" name="card_type" />Rupay
+                    <input style="margin-left: 30px;" type="radio" name="card_type" />Mastercard
+                </td>
+            </tr>
+            <tr>
+                <td class="tdo">Card Number</td>
+                <td class="tdv">
+                    <input placeholder="Enter your card number" class="inputa" type="text" name="card_num" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdo">Security Code</td>
+                <td class="tdv">
+                    <input placeholder="Enter your card name" class="inputa" type="text" name="card_name" />
+                </td>
+            </tr>
+            <tr>
+                <td class="tdo">Name on Card</td>
+                <td class="tdv">
+                    <input placeholder="Your name on card" class="inputa" type="text" name="name_on_card" />
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">
+
+                    <button align="center" name="buy">BUY IT!</button>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+<div class="footer">
+    <p>Made with <font color="red"> &hearts; </font> by Subhodeep sarkar</p>
+</div>
+</body>
+</html>
